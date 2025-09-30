@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Wevsite</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+<div class="wrapper">
+    <header class="container">
+        <span class="logo">Logo</span>
+        <nav>
+            <ul>
+                <li class="active"> <a href="#">Home</a></li>
+                <li class="nav_link"><a href="#">About is</a></li>
+                <li class="nav_link"><a href="#">Portfolio</a></li>
+                <li class="nav_link"><a href="#">News</a></li>
+                <li class="btn "><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero container">
+        <div class="hero--info">
+            <h2>3D game Dev</h2>
+            <h1> Work that we produce for out clients</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus explicabo sapiente earum molestiae repellendus minus ipsam perspiciatis quae, placeat molestias sit magni facere reprehenderit laudantium nihil voluptatibus rerum, dolore accusantium?</p>
+            <buton class="btn btn_hero">Get more details</buton>
+        </div>
+        <div class="chotka"><img src="img/чотка/djostick.png" alt=""></div>
+    </div>
+
+    <div class="container trending" >
+        <a href="" class="see-all">SEE ALL</a>
+        <h3>Currently Trending Games</h3>
+
+        <div class="games">
+            <div class="block">
+                <img src="img/чотка/fre.png" alt="">
+                <span><img class="fare" src="img/чотка/fare.png" alt=""> 40 Followers</span>
+            </div>
+            <div class="block">
+                <img src="img/чотка/gen.png" alt="">
+                <span><img class="fare" src="img/чотка/fare.png" alt=""> 40 Followers</span>
+            </div>
+            <div class="block">
+                <img src="img/чотка/mi.png" alt="">
+                <span><img class="fare" src="img/чотка/fare.png" alt=""> 40 Followers</span>
+            </div>
+            <div class="block">
+                <img src="img/чотка/og.png" alt="">
+                <span><img class="fare" src="img/чотка/fare.png" alt=""> 40 Followers</span>
+            </div>
+        </div>
+
+    </div>
+
+<div class="container big-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, corporis.</div>
+
+<div class="container banner">
+    <h3>Lorem ipsum</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati accusamus tempora totam necessitatibus perspiciatis blanditiis sint praesentium sapiente repellat iure voluptate voluptatem ab similique commodi eaque repudiandae, ad voluptatum?</p>
+    <img src="img/чотка/pyk.webp" alt="">
+
+
+    <div class="container email">
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quod animi debitis ab itaque corrupti obcaecati?</p>
+        <div class="block">
+            <div>
+                <h4>Lorem ipsum</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+            <div>
+                <input class="cnopka" id="emailField" type="email" placeholder="Enter email address">
+                <button onclick="checkEmail()" class="knopka">Contiune</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<footer>
+    <div class="block container">
+        <div>
+        <span class="logo"></span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eligendi iusto asperiores minima, aliquid blanditiis et? Et ex unde aspernatur impedit</p>
+    </div>
+    </div>
+
+</footer>
+
+
+
+
+<script>
+    function checkEmail() {
+        let email = document.querySelector('#emailField').value
+        if(!email.includes('@')) alert('Нет символа @')
+        else if(!email.includes('.')) alert('Нет символа .')
+    else alert('Все отлично!')
+    }
+</script>
+
+</body>
+
+</html>
